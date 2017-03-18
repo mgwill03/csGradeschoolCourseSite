@@ -1,4 +1,15 @@
+<app-navigation-bar></app-navigation-bar>
 <h1>
   {{title}}
 </h1>
 <app-example1></app-example1>
+<div style="width: 100%; overflow: hidden;">
+<div class="well sidebar-nav" ng-app="navList">
+  <ul class="nav nav-list" ng-controller="navCtrl">
+    <li ng-class="navClass('home')"><a href='#/home'>Home</a></li>
+    <li ng-class="navClass('about')"><a href='#/about'>About Us</a></li>
+    <li ng-class="navClass('contact')"><a href='#/contact'>Contact Us</a></li>
+  </ul>
+</div>
+<app-video-display></app-video-display>
+</div>
